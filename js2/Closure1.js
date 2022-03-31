@@ -1,4 +1,4 @@
-// In other words, a closure gives you access to an outer function's scope from an inner function.
+// a CLOSURE gives you access to an outer function's scope from an inner function.
 
 // function printFullName(firstName, lastName) {
 //   function printName() {
@@ -16,8 +16,9 @@ function myFunction(power) {
   };
 }
 
-const myFunction = (power) => (number) => number ** power;
+// arrow function similar to above function
+// const myFunction = (power) => (number) => number ** power;
 
 const square = myFunction(2);
-const ans1 = square(3);
+const ans1 = square(3); 
 console.log(ans1);
